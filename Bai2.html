@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Enter the radius</label>
+<input type="text" id="input">
+<button onclick="chuViVaDienTich()">CLick</button>
+<h2 id="chuVi"></h2>
+<h2 id="dienTich"></h2>
+<script>
+function chuViVaDienTich() {
+    let pi = 3.141592
+    let r = +document.getElementById('input').value;
+    let chuVi = pi*2*r
+    let dienTich = pi*r*r
+    document.getElementById('chuVi').innerHTML= 'Chu Vi hinh tron la: '+chuVi
+    document.getElementById('dienTich').innerHTML= 'Dien Tich hinh tron la: '+dienTich
+}
+</script>
+</body>
+</html>

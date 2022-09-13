@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[]
+    let kiTu=prompt("nhap mang ki tu vao day")
+    arr.push(kiTu)
+    let kiemTra=prompt("nhap ki tu muon kiem tra lan xuat hien")
+
+    function check(){
+        for (let i = 0; i < arr.length; i++) {
+            if(kiemTra===arr[i]){
+                alert('So lan xuat hien trong mang la =   ' + (i+1))
+            }
+        }
+    }check()
+</script>
+</body>
+</html>

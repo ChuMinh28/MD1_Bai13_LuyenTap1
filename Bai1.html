@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Enter a number:</label>
+<input type="text" id="input">
+<button onclick="tinh()">Click</button>
+<h2 id="result"></h2>
+<script>
+    function binhPhuong(x){
+        x= Math.pow(x,2)
+        return x
+    }
+    function tinh(){
+        let num =+document.getElementById("input").value;
+        ketQua = binhPhuong(num)
+        document.getElementById('result').innerHTML = 'Binh phuong cua '+num+' la: ' +ketQua
+  return ketQua
+  }
+</script>
+</body>
+</html>

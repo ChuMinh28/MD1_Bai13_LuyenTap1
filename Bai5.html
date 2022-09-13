@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Enter the first number:')
+    let b = +prompt('Enter the second number:')
+    let c = +prompt('Enter the third number:')
+
+    function minNumber() {
+        if (a < b && a < c) {
+            alert(+a + ' la so nho nhat')
+        }
+        if (b < a && b < c) {
+            alert(+b + '  la so nho nhat')
+        }
+        if (c < a && a < b) {
+            alert(+c+ '  la so nho nhat')
+        }
+    }
+    minNumber()
+</script>
+</body>
+</html>
